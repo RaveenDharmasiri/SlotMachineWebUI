@@ -1,0 +1,28 @@
+@()
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script src="@routes.Assets.versioned("javascripts/SlotMachineTS/SlotMachineTS.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/SlotMachineTS/FirebaseInitilize.js")" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/StatisticsCSS.css")">
+    </head>
+    <body style="background-color: #4f5050">
+        <div id="header">
+            <h1 id = "topic1">Statistics</h1>
+        </div>
+        <div id="chartContainer" style="height: 300px; width: 100%;">
+
+        </div><br>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+        <form>
+            <input id="btnDatabase" type="button" value="Add to Database" onclick = "addToFirebaseDatabase()">
+        </form>
+
+        <div id=statContainer">
+            <h3 id="stats"></h3>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+#header{
+    text-align:center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:70pt;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:10px;
+    color:white;
+    font-weight:bold;
+}
+
+#container1{
+    background-color: #376595;
+    border-style: solid;
+    margin-bottom:0px;
+}
+
+#mainContainer{
+    width:1069px;
+    height:225px;
+    background-color: #376595;
+    padding-top: 20px;
+    margin-right:auto;
+    margin-left:auto;
+
+}
+
+#mainContainer_1{
+    float:left;
+    text-align:center;
+    width:200px;
+    height:200px;
+    background:green;
+    margin-right:20px;
+    padding-right:10px;
+    padding-left:10px;
+    background-color: #376595;
+}
+
+#mainCointainer_2{
+    padding-top:25px;
+    padding-right:10px;
+    padding-left:10px;
+    background-color: #376595;
+    width:569px;
+    height:200px;
+    float:left;
+}
+
+#mainContainer_3{
+    background-color:red;
+    width:200px;
+    height:200px;
+    float:left;
+    text-align:center;
+    margin-left:20px;
+    padding-right:10px;
+    padding-left:10px;
+    background-color: #376595;
+}
+
+#lblCredit{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size:25pt;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.Amount{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size:65pt;
+    margin-top:10px;
+    color:white;
+}
+
+#lblBet{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size:25pt;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.images{
+    border-style:solid;
+    border-color:black ;
+    border-width:7px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    cursor: pointer;
+}
+
+#buttonContainer{
+    background-color: #376595;
+    padding-top:20px;
+    width:1069px;
+    margin-right:auto;
+    margin-left:auto;
+    text-align: center;
+    height:200px
+}
+
+#btnSpin{
+    height: 60px;
+    width : 180px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#btnSpin:hover {background-color: #626566}
+
+#btnSpin:active {
+    background-color: #626566;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.buttons{
+    position: relative;
+    background-color: black;
+    border: none;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    height:40px;
+}
+
+.buttons:after{
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.buttons:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+

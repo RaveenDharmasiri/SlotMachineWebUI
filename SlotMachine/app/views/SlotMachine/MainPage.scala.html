@@ -1,0 +1,56 @@
+@()
+
+
+<html>
+    <head>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/SlotMachineCSS.css")">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+        <script src="@routes.Assets.versioned("javascripts/SlotMachineTS/SlotMachineTS.js")" type="text/javascript"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <title>Spin to Win</title>
+    </head>
+
+    <body style = "background-color: #4f5050">
+        <div>
+            <div id="container1">
+                <h1 id="header">S&nbsp; p&nbsp; i&nbsp; n&nbsp;&nbsp;&nbsp;&nbsp;t&nbsp; o&nbsp;&nbsp;&nbsp;&nbsp;W&nbsp; i&nbsp; n</h1>
+            </div>
+
+            <div id="mainContainer" > <!-- this is large division for the middle part -->
+                <!-- creating the first div to display information about the credit amount-->
+                <div id="mainContainer_1">
+                    <h2 id="lblCredit">Credit Amount</h2>
+                    <h2 id="lblCreditAmount" class="Amount">10</h2>
+                </div>
+
+                <!-- creating the center div to display the images-->
+                <div id="mainCointainer_2" >
+                    <img class="images" id="image1" onclick="reel1Clicked()" style="margin-right:10px" src="@routes.Assets.versioned("images/bell.png")" width = "163" alt="cannot display">
+                    <img class="images" id="image2" onclick="reel2Clicked()" style="margin-right:10px" src="@routes.Assets.versioned("images/lemon.png")" width = "163" alt="cannot display">
+                    <img class="images" id="image3" onclick="reel3Clicked()" style="margin-right:10px" src="@routes.Assets.versioned("images/cherry.png")" width = "163" alt="cannot display">
+                </div>
+
+                <!-- right div to display bid amount information -->
+                <div id="mainContainer_3">
+                    <h2 id="lblBet">Bet &nbsp; &nbsp;Amount</h2>
+                    <h2 id="lblBetAmount" class="Amount">0</h2>
+                </div>
+
+            </div>
+
+            <!-- div to display buttons.-->
+            <div id="buttonContainer">
+                <form action="http://localhost:9000/stat">
+                    <a class="waves-effect waves-light btn-large"><input id = "btnSpin" type=button value="Spin" onclick="btnSpinFunction()"></a><br><br><br>
+                    <input class="buttons" id="btnAddCoin" type=button value="Add Coin" onclick="addCredit()">
+                    <input class="buttons" id="btnBetOne"  type=button value="Bet One" onclick="betCredit()">
+                    <input class="buttons" id="btnBetMax" type=button value="Bet Max" onclick="betMax()"><br><br>
+                    <input class="buttons" id = "btnReset" type=button value="Reset" onclick="resetFunction()">
+                    <input class="buttons" id="btnStatistics" type="button" value="Statistics" onclick="btnStatisticsFunction()">
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

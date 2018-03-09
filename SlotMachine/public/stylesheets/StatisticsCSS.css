@@ -1,0 +1,50 @@
+#topic1{
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+    font-size:40pt;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+#stats{
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+    font-size:25pt;
+}
+
+#btnDatabase{
+    position: relative;
+    background-color: black;
+    border: none;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    height:60px;
+}
+
+#btnDatabase:after{
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#btnDatabase:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
